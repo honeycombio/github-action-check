@@ -10,7 +10,7 @@ You can add it as a step in your GitHub Actions workflow to automatically check 
 
 ```
   - name: Grit
-    uses: getgrit/github-action-check@v0
+    uses: honeycombio/github-action-check@v0
     with:
       # Optional additional arguments to pass to the `grit check` command
       args: ''
@@ -25,7 +25,7 @@ By default, only warning and error patterns are reported. To include info patter
 
 ```
   - name: Grit
-    uses: getgrit/github-action-check@v0
+    uses: honeycombio/github-action-check@v0
     with:
       args: '--level info'
 ```
@@ -50,7 +50,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
       - name: grit-check
-        uses: getgrit/github-action-check@v0
+        uses: honeycombio/github-action-check@v0
 ```
 
 ## License
